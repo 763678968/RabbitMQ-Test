@@ -22,6 +22,7 @@
         </rabbit:bindings>
     </rabbit:fanout-exchange>
 
+
     <!-- 队列监听 -->
     <rabbit:listener-container connection-factory="connectionFactory">
         <rabbit:listener ref="foo" method="listen" queue-names="myQueue"/>
